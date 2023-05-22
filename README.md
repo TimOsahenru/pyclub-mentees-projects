@@ -1,1 +1,0 @@
-# pyclub-mentees-projects
