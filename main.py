@@ -20,3 +20,7 @@ class User():
         if task in self.tasks:
             index_task = self.tasks.index(task)
             self.tasks[index_task] = new_task
+            
+            
+    def delete_tasks(self, task):
+        self.tasks.remove(task)

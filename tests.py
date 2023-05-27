@@ -64,6 +64,20 @@ class TestUser(unittest.TestCase):
         self.assertEqual(len(user.tasks), 2)
         
         
+    def test_delete(self):
+        user = User("tim")
+        task_1 = Task("task 1")
+        task_2 = Task("task 2")
+        
+        user.add_tasks(task_1)
+        user.add_tasks(task_2)
+        
+        user.delete_tasks(task_1)
+        
+        self.assertEqual(len(user.tasks), 1)
+        self.assertIn(task_2, user.tasks)
+        
+        
         
 if __name__ == "__main__":
     unittest.main()
