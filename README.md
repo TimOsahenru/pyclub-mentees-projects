@@ -1,19 +1,16 @@
-# pyclub-mentees-project
+# PyClub Mentee Project
+## A simple todo app tha introduces you to the concepts of TDD from writing a users story.
 
+## Users story
+- ### 1. A Task should have:
+    - ### A title
+    - ### A description
+    - ### A completed status
 
-#### This a project for beginners that introduces one into the concepts of TDD.
-
-#### The project is Todo app that runs on the command, the main focus of this project is centered on the three phases of TDD
-#### Test-Implement-Refactor
-
-
-# User story
-1. User should be able to:
-a. Add tasks
-b. Remove tasks
-c. Display tasks of each User
-
-2. Task should:
-a. Have title
-b. A description
-c. Is completed status
+- ### 2. A User should have
+    - ### A name
+    - ### An assigned task
+    - ### Able to
+        - ### Add tasks
+        - ### Edit tasks
+        - ### Delete tasks
