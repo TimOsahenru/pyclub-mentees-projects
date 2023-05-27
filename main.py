@@ -14,3 +14,9 @@ class User():
         
     def add_tasks(self, task):
         self.tasks.append(task)
+        
+        
+    def update_tasks(self, task, new_task):
+        if task in self.tasks:
+            index_task = self.tasks.index(task)
+            self.tasks[index_task] = new_task

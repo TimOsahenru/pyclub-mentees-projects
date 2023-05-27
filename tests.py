@@ -46,6 +46,23 @@ class TestUser(unittest.TestCase):
         self.assertIn(task_2, user.tasks)
         
         
+          
+    def test_update_task(self):
+        user = User("tim")
+        task_1 = Task("task 1")
+        task_2 = Task("task 2")
+        
+        user.add_tasks(task_1)
+        user.add_tasks(task_2)
+        
+        new_task = Task("task 3")
+        
+        user.update_tasks(task_1, new_task)
+        
+        self.assertNotIn(task_1, user.tasks)
+        self.assertIn(new_task, user.tasks)
+        self.assertEqual(len(user.tasks), 2)
+        
         
         
 if __name__ == "__main__":
