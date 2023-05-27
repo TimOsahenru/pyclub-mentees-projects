@@ -24,3 +24,12 @@ class User():
             
     def delete_tasks(self, task):
         self.tasks.remove(task)
+        
+        
+    def display_tasks(self):
+        print("Username: ", self.username)
+        for task in self.username:
+            print("Title", task.title)
+            print("Description", task.description)
+            print("Completed Status", task.is_completed)
+            print()
