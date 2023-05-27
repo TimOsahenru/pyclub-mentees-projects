@@ -33,6 +33,19 @@ class TestUser(unittest.TestCase):
         self.assertEqual(len(user.tasks), 0)
         
         
+    def test_add_tasks(self):
+        user = User("tim")
+        task_1 = Task("task 1")
+        task_2 = Task("task 2")
+        
+        user.add_tasks(task_1)
+        user.add_tasks(task_2)
+        
+        self.assertEqual(len(user.tasks), 2)
+        self.assertIn(task_1, user.tasks)
+        self.assertIn(task_2, user.tasks)
+        
+        
         
         
 if __name__ == "__main__":
