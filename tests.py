@@ -1,5 +1,5 @@
 import unittest
-from main import Task
+from main import Task, User
 
 
 class TestTask(unittest.TestCase):
@@ -17,6 +17,21 @@ class TestTask(unittest.TestCase):
     def test_complete_status(self):
         task = Task("title")
         self.assertFalse(task.is_completed)
+        
+        
+        
+class TestUser(unittest.TestCase):
+    
+    def test_username(self):
+        user = User("tim")
+        self.assertEqual(user.username, "tim")
+        
+        
+    def test_tasks(self):
+        user = User("tim")
+        self.assertEqual(user.tasks, [])
+        self.assertEqual(len(user.tasks), 0)
+        
         
         
         

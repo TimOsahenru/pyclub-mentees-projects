@@ -3,3 +3,10 @@ class Task():
         self.title = title
         self.description = ""
         self.is_completed = False
+        
+        
+        
+class User():
+    def __init__(self, username):
+        self.username = username
+        self.tasks = []
